@@ -1,6 +1,6 @@
 public class Meat extends Product{
 
     public Meat(int weight, String name, double quality, int price) {
-        super(5, "Meat", 1.2, 2500);
+        super(5, "Meat", Quality.HIGH, 2500);
     }
 }

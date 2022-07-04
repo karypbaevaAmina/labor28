@@ -1,12 +1,12 @@
 public class Product {
 
-    public int weight;
+    private int weight;
 
-    public String name;
-    public double quality;
-    public int price;
+    private String name;
+    private Quality quality;
+    private int price;
 
-    public Product(int weight, String name, double quality, int price) {
+    public Product(int weight, String name, Quality quality, int price) {
         this.weight = weight;
         this.name = name;
         this.quality = quality;
@@ -18,11 +18,23 @@ public class Product {
     public String getName(){
         return name;
     }
-    public double getQuality(){
-        return quality;
+
+    public void setQuality(Quality quality) {
+        this.quality = quality;
     }
 
     public int getPrice(){
         return price;
     }
+
+    public double getFinalCost() {
+        return quality.getFinalCost(this);
+    }
+
+    public void downQuality() {
+        quality.downerQuality(this);
+    }
+
+
+
 }

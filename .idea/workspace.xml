@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44ec84fd-a3c7-43b2-af48-3410a5c3c409" name="Changes" comment="Init1">
-      <change afterPath="$PROJECT_DIR$/src/Corn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DryFruits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Fabrics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Flour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Meat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Paint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service.java" afterDir="false" />
+    <list default="true" id="44ec84fd-a3c7-43b2-af48-3410a5c3c409" name="Changes" comment="Init2">
+      <change afterPath="$PROJECT_DIR$/src/Quality.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Travelable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Corn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Corn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DryFruits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DryFruits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fabrics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fabrics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Flour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Meat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Meat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Paint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/State.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,14 +43,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Амина/IdeaProjects/labor28"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Амина/IdeaProjects/labor28&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -79,7 +81,8 @@
       <workItem from="1656870801035" duration="798000" />
       <workItem from="1656871742539" duration="1097000" />
       <workItem from="1656873445037" duration="2051000" />
-      <workItem from="1656876134507" duration="1781000" />
+      <workItem from="1656876134507" duration="5939000" />
+      <workItem from="1656944126357" duration="293000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1656863294472</created>
@@ -88,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656863294472</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Init2">
+      <created>1656878222583</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656878222583</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +118,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
     <MESSAGE value="Init1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init1" />
+    <MESSAGE value="Init2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init2" />
   </component>
 </project>
