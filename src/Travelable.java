@@ -9,4 +9,6 @@ public  interface Travelable {
         return EVENTS[random];
     }
     City getCity();
+
+
 }

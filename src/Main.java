@@ -6,5 +6,6 @@ public class Main {
                 Cart cart = new Cart();
                 System.out.println(City.BISHKEK.getDistance());
                 cart.startDay();
+
     }
 }

@@ -30,11 +30,7 @@ public class Product {
     public double getFinalCost() {
         return quality.getFinalCost(this);
     }
-
     public void downQuality() {
         quality.downerQuality(this);
     }
-
-
-
 }

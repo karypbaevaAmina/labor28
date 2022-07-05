@@ -41,7 +41,6 @@ public class Cart {
         }
         speed = 3;
     }
-
     public Product getRandomProduct() {
         return productList.get(new Random().nextInt(productList.size()));
     }
