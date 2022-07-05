@@ -1,12 +1,12 @@
 import java.util.Random;
 
 public  interface Travelable {
-    State[] STATES = {State.NORMAL, State.RAIN};
-    City[] CITIES = {City.PARIS};
+    Event[] EVENTS = {Event.NORMAL, Event.RAIN};
+    City[] CITIES = {City.BISHKEK};
 
-    static State getEvent() {
-        int random = new Random().nextInt(STATES.length);
-        return STATES[random];
+    static Event getEvent() {
+        int random = new Random().nextInt(EVENTS.length);
+        return EVENTS[random];
     }
     City getCity();
 }

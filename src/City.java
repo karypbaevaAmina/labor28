@@ -7,6 +7,30 @@ public enum City {
         public String getName() {
             return "Paris";
         }
+    },
+    BISHKEK ("Bishkek") {
+        @Override
+        public String getName() {
+            return "Bishkek";
+        }
+    },
+    MOSCOW("Moscow") {
+        @Override
+        public String getName() {
+            return "Moscow";
+        }
+    },
+    TOKYO("Tokyo") {
+        @Override
+        public String getName() {
+            return "Tokyo";
+        }
+    },
+    ASTANA ("Astana") {
+        @Override
+        public String getName() {
+            return "Astana";
+        }
     };
 
     String name;
@@ -24,7 +48,4 @@ public enum City {
     public void setDistance(int distance) {
         this.distance = distance;
     }
-
-
-
 }

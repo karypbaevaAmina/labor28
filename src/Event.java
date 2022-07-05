@@ -1,74 +1,76 @@
 import java.util.Random;
+import java.util.Random;
 
-public enum State {
+public enum Event {
     NORMAL("Normal") {
-        public void startDay(Dealer dealer) {
+        public void startDay(Cart cart) {
             System.out.println("Normal day!");
         }
     },
     RAIN("Rain") {
         @Override
-        public void startDay(Dealer dealer) {
+        public void startDay(Cart cart) {
             System.out.println("it's rainy day!");
-            dealer.setMoveSpeed(1);
+            cart.setSpeed(1);
             int random = new Random().nextInt(10);
             if (random < 3) {
-                Product product = dealer.getRandomProduct();
+                Product product = cart.getRandomProduct();
                 product.downQuality();
             }
         }
     },
     FLATROAD("Flat road") {
         @Override
-        public void startDay(Dealer dealer) {
+        public void startDay(Cart cart) {
             System.out.println("Today we are going on a flat road!");
-            dealer.setMoveSpeed(5);
+            cart.setSpeed(5);
         }
     },
     BROKENWHEEL("Broken wheel") {
         @Override
-        public void startDay(Dealer dealer) {
-            dealer.setMoveSpeed(0);
+        public void startDay(Cart cart) {
+            cart.setSpeed(0);
             System.out.println("Broke wheel, wait help!");
         }
     },
     RIVER("River") {
         @Override
-        public void startDay(Dealer dealer) {
-            dealer.setMoveSpeed(0);
+        public void startDay(Cart cart) {
+            cart.setSpeed(0);
             System.out.println("Ran into the river, looking for a ford!");
         }
     },
     METNATIVE("Met native") {
         @Override
-        public void startDay(Dealer dealer) {
-            dealer.setMoveSpeed(0);
+        public void startDay(Cart cart) {
+            cart.setSpeed(0);
             int random = new Random().nextInt(3) + 3;
-            City city = dealer.getCity();
+            City city = cart.getCity();
             city.setDistance(city.getDistance() - random);
             System.out.printf("Met native! Managed to cut %d of the way!\n", random);
         }
     },
     ROBBERS("Robbers") {
         @Override
-        public void startDay(Dealer dealer) {
+        public void startDay(Cart cart) {
             System.out.println("Met robbers!");
             int random = new Random().nextInt(2);
-            if (dealer.getMoney() > 500 && random == 0) {
-                int money = dealer.getMoney();
+            if (cart.getMoney() > 500 && random == 0) { // for pay to robbers we need have some money
+                int money = cart.getMoney();
                 int tenPercentOfTotalMoney = money / 100 * 10;
-                dealer.setMoney(money - tenPercentOfTotalMoney);
+                cart.setMoney(money - tenPercentOfTotalMoney);
                 System.out.println("Give up to robbers 10 percent of money");
-                System.out.printf("Money left: %d\n", dealer.getMoney());
+                System.out.printf("Money left: %d\n", cart.getMoney());
             } else {
 
             }
         }
-    };
-    State(String state) {
+    }
+    ;
+
+    Event(String event) {
+
     }
 
-    public abstract void startDay(Dealer dealer);
-
-
+    public abstract void startDay(Cart cart);
 }
