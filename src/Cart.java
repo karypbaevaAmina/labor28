@@ -1,16 +1,19 @@
-import java.util.List;
-import java.util.Random;
-
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class Cart {
     private int capacity = 500;
     private int speed = 3;
-    private int money = new Random().nextInt(15000) + 25000;
+    private double money = new Random().nextInt(15000) + 25000d;
     private City city;
-    private List<Product> productList;
     private Event event;
+
+    private Travelable travelable ;
+    List<Product> productList = new ArrayList<>();
+
+    public Cart() {
+    }
 
     public  int getSpeed() {
         return speed;
@@ -20,16 +23,20 @@ public class Cart {
         this.speed = speed;
     }
 
-    public int getMoney() {
+    public double getMoney() {
         return money;
     }
 
-    public void setMoney(int money) {
+    public void setMoney(double money) {
         this.money = money;
     }
 
     public City getCity() {
         return city;
+    }
+
+    public List<Product> getProductList() {
+        return productList;
     }
 
     public void startDay() {
@@ -41,6 +48,7 @@ public class Cart {
         }
         speed = 3;
     }
+
     public Product getRandomProduct() {
         return productList.get(new Random().nextInt(productList.size()));
     }

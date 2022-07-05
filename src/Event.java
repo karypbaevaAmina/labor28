@@ -1,5 +1,4 @@
 import java.util.Random;
-import java.util.Random;
 
 public enum Event {
     NORMAL("Normal") {
@@ -56,7 +55,7 @@ public enum Event {
             System.out.println("Met robbers!");
             int random = new Random().nextInt(2);
             if (cart.getMoney() > 500 && random == 0) { // for pay to robbers we need have some money
-                int money = cart.getMoney();
+                int money = (int) cart.getMoney();
                 int tenPercentOfTotalMoney = money / 100 * 10;
                 cart.setMoney(money - tenPercentOfTotalMoney);
                 System.out.println("Give up to robbers 10 percent of money");

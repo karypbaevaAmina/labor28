@@ -12,9 +12,7 @@ public class Product {
         this.quality = quality;
         this.price = price;
     }
-    public int getWeight() {
-        return weight;
-    }
+
     public String getName(){
         return name;
     }
